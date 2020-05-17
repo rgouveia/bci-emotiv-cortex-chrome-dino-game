@@ -1,4 +1,4 @@
-# bci-emotiv-cortex-chrome-dino-game
+# Brain-computer interface with Emotiv Cortex API to control the T-Rex in Chrome game
 
 A quarantine weekend project... experimenting with Emotiv Cortex API to control the dinosaur in chrome (no-internet) game with a mental command.
 
