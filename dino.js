@@ -571,7 +571,7 @@
                     Math.ceil(this.distanceRan));
 
                 if (playAchievementSound) {
-                    //this.playSound(this.soundFx.SCORE);
+                    this.playSound(this.soundFx.SCORE);
                 }
 
                 // Night mode.

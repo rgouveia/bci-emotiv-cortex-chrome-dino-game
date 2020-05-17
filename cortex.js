@@ -32,7 +32,7 @@
 		 * - user think specific thing which used while training, for example 'push' action
 		 * - 'push' command should show up on mental command stream
 		 */
-		live(command='', profileName='') {
+		live(command='', sensitivity=0, profileName='') {
 			let commandEvent = this.mindupCommand
 			let commandBreakEvent = this.minddownCommand
 			let currentAction = this.currentAction
@@ -58,7 +58,7 @@
 					currentAction[1] = JSON.parse(message)['com'][1]
 					currentAction[2] = JSON.parse(message)['time']
 					//console.log(currentAction)
-					if(JSON.parse(message)['com'][0]==command){
+					if(currentAction[0]==command && currentAction[1]>sensitivity){
 							// console.log('MENTAL COMMAND ACTIVE ACTION RESULT --------------------')
 							// console.log(message)
 							// console.log('\r\n')
